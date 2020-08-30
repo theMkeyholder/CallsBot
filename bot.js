@@ -63,13 +63,7 @@ client.on("message", message => {
                                     send(channel, '@pinglol');
                                     break; 
                             case "random":
-                                    let a = Math.random() * 6;
-                                    if(a < 1) send(channel, 'c;test1');
-                                    else if(a < 2) send(channel, 'c;test2');
-                                    else if(a < 3) send(channel, 'c;test3');
-                                    else if(a < 4) send(channel, 'c;ping');
-                                    else if(a < 5) send(channel, 'c;pinglol');
-                                    else send(channel, 'c;random');
+                                    send(channel, ["wanna be friends?", "loved it", `wanna be friends, <@${message.author}>?`, `what is ping, <@${message.author}>?`,'@pinglol','c;random'][Math.floor(Math.random()*6)])
                                     break; 
                         }
         }
